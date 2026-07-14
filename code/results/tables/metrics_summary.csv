@@ -1,0 +1,16 @@
+task,metric,value
+blood_physiology_three_components,mae,0.2030922348629668
+blood_physiology_three_components,mape,0.09901852788195126
+blood_physiology_three_components,component_mae:Glucose,0.031622703723092054
+blood_physiology_three_components,component_mae:Urea,0.299517216819701
+blood_physiology_three_components,component_mae:Cholesterol,0.15807520235588765
+blood_physiology_three_components,component_mae:APAP,0.32315381655318653
+blood_physiology_three_components,first3_trend_all_matched,True
+blood_drug_spiking,mae,0.2599516289439052
+blood_drug_spiking,rmse,0.3869309612057841
+blood_drug_spiking,mape,0.121187747657035
+blood_drug_spiking,component_mae:Glucose,0.0842465751171112
+blood_drug_spiking,component_mae:Urea,0.3612907029390335
+blood_drug_spiking,component_mae:Cholesterol,0.1794469449520111
+blood_drug_spiking,component_mae:APAP,0.41482229276746513
+blood_drug_spiking,first3_trend_all_matched,True

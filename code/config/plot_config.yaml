@@ -1,0 +1,10 @@
+figures:
+  cocktail_gid_prediction_barplot:
+    title: Cocktail mixture concentration prediction summary
+    source: data/processed/cocktail/cocktail_gid_prediction_barplot.png
+  blood_physiology_apap_optimized:
+    title: Blood physiology APAP-optimized prediction
+    source: data/processed/blood_physiology/before_after_barplot.png
+  blood_drug_spiking_true_pred:
+    title: Blood drug-spiking true vs predicted values
+    source: data/processed/blood_drug/true_pred_barplot.png

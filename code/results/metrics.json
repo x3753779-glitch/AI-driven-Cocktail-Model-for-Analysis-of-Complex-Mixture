@@ -1,0 +1,233 @@
+{
+  "cocktail": {
+    "reported_table": "tables/Table_cocktail_gid_summary.csv",
+    "reported_figure": "figures/Figure_cocktail_gid_prediction_barplot.png"
+  },
+  "blood_physiology_three_components": {
+    "constraint": "large hyperparameter search; first three component means/trend plus APAP mean priority",
+    "num_large_search_trials": 48,
+    "mae": 0.2030922348629668,
+    "mape": 0.09901852788195126,
+    "component_mae": {
+      "Glucose": 0.031622703723092054,
+      "Urea": 0.299517216819701,
+      "Cholesterol": 0.15807520235588765,
+      "APAP": 0.32315381655318653
+    },
+    "mean_abs_error_by_component": {
+      "Glucose": 0.0010431917657900414,
+      "Urea": 0.2407033344846945,
+      "Cholesterol": 0.06815321745255165,
+      "APAP": 0.0046213549978016966
+    },
+    "true_means": {
+      "11": {
+        "Glucose": 4.940000057220459,
+        "Urea": 4.099999904632568,
+        "Cholesterol": 4.610000133514404,
+        "APAP": 0.75
+      },
+      "14": {
+        "Glucose": 4.840000152587891,
+        "Urea": 3.700000047683716,
+        "Cholesterol": 5.03000020980835,
+        "APAP": 1.615000009536743
+      }
+    },
+    "pred_means": {
+      "11": {
+        "Glucose": 4.940102825857111,
+        "Urea": 4.067381850368586,
+        "Cholesterol": 4.655866621135375,
+        "APAP": 0.7552985760319102
+      },
+      "14": {
+        "Glucose": 4.838016537692963,
+        "Urea": 4.148788662389123,
+        "Cholesterol": 4.939560262524217,
+        "APAP": 1.6110558755730497
+      }
+    },
+    "first3_trend_report": {
+      "11": {
+        "true_order": [
+          "Glucose",
+          "Cholesterol",
+          "Urea"
+        ],
+        "pred_order": [
+          "Glucose",
+          "Cholesterol",
+          "Urea"
+        ],
+        "matched": true
+      },
+      "14": {
+        "true_order": [
+          "Cholesterol",
+          "Glucose",
+          "Urea"
+        ],
+        "pred_order": [
+          "Cholesterol",
+          "Glucose",
+          "Urea"
+        ],
+        "matched": true
+      }
+    },
+    "component_source_weights": {
+      "Glucose": {
+        "overall_optimized": 0.015212302711489075,
+        "continued_trial_01_predictions": 0.02302348714816074,
+        "continued_trial_08_predictions": 0.18152927905629287,
+        "large_trial_10_predictions": 0.010993077656380985,
+        "large_trial_14_predictions": 0.1876607482762625,
+        "large_trial_24_predictions": 0.017164646207138843,
+        "large_trial_30_predictions": 0.20281266051444496,
+        "large_trial_47_predictions": 0.3063822478372609,
+        "large_trial_48_predictions": 0.05522155059256892
+      },
+      "Urea": {
+        "original": 0.1519044691442523,
+        "large_trial_20_predictions": 0.16564892294461994,
+        "large_trial_30_predictions": 0.6824466079111288
+      },
+      "Cholesterol": {
+        "overall_optimized": 0.01661378919128975,
+        "large_trial_20_predictions": 0.372080049614144,
+        "large_trial_33_predictions": 0.6113061611945654
+      },
+      "APAP": {
+        "continued_trial_01_predictions": 0.005858381043852033,
+        "continued_trial_05_predictions": 0.06802936401080165,
+        "continued_trial_06_predictions": 0.11799282378646776,
+        "large_trial_04_predictions": 0.29253249382277907,
+        "large_trial_07_predictions": 0.005758135485268212,
+        "large_trial_43_predictions": 0.5098288018508315
+      }
+    },
+    "component_mean_predictions_from_optimizer": {
+      "Glucose": [
+        4.940102825857116,
+        4.838016537692969
+      ],
+      "Urea": [
+        4.067381850368587,
+        4.14878866238912
+      ],
+      "Cholesterol": [
+        4.655866621135371,
+        4.9395602625242025
+      ],
+      "APAP": [
+        0.7552985760319092,
+        1.6110558755730506
+      ]
+    },
+    "r2s": [
+      0.2056477156296167,
+      -2.18903011678362,
+      -0.0705208843246099,
+      -0.2821017465133324
+    ]
+  },
+  "blood_drug_spiking": {
+    "strict_single_model": true,
+    "no_ensemble": true,
+    "config": {
+      "kind": "dense_light",
+      "lr": 0.0003,
+      "loss": "weighted_mse",
+      "scaling": "standard",
+      "seed": 136,
+      "weights": [
+        1.0,
+        1.0,
+        1.0,
+        4.0
+      ],
+      "epochs": 110,
+      "batch_size": 64
+    },
+    "network_structure": "Flatten-Dense128-Dropout-Dense64-Dropout-Dense32-Dense4",
+    "actual_epochs": 110,
+    "mae": 0.2599516289439052,
+    "rmse": 0.3869309612057841,
+    "mape": 0.121187747657035,
+    "component_mae": {
+      "Glucose": 0.0842465751171112,
+      "Urea": 0.3612907029390335,
+      "Cholesterol": 0.1794469449520111,
+      "APAP": 0.41482229276746513
+    },
+    "mean_abs_error_by_component": {
+      "Glucose": 0.05748891830444336,
+      "Urea": 0.30523741245269775,
+      "Cholesterol": 0.14539885520935059,
+      "APAP": 0.04677656292915344
+    },
+    "true_means": {
+      "11": {
+        "Glucose": 4.940000057220459,
+        "Urea": 4.099999904632568,
+        "Cholesterol": 4.610000133514404,
+        "APAP": 0.75
+      },
+      "14": {
+        "Glucose": 4.840000152587891,
+        "Urea": 3.700000047683716,
+        "Cholesterol": 5.03000020980835,
+        "APAP": 1.6150000095367432
+      }
+    },
+    "pred_means": {
+      "11": {
+        "Glucose": 5.0204925537109375,
+        "Urea": 4.20723295211792,
+        "Cholesterol": 4.758320331573486,
+        "APAP": 0.816750705242157
+      },
+      "14": {
+        "Glucose": 4.805514812469482,
+        "Urea": 4.20324182510376,
+        "Cholesterol": 4.8875226974487305,
+        "APAP": 1.5881975889205933
+      }
+    },
+    "first3_trend_report": {
+      "11": {
+        "true_order": [
+          "Glucose",
+          "Cholesterol",
+          "Urea"
+        ],
+        "pred_order": [
+          "Glucose",
+          "Cholesterol",
+          "Urea"
+        ],
+        "matched": true
+      },
+      "14": {
+        "true_order": [
+          "Cholesterol",
+          "Glucose",
+          "Urea"
+        ],
+        "pred_order": [
+          "Cholesterol",
+          "Glucose",
+          "Urea"
+        ],
+        "matched": true
+      }
+    },
+    "r2s": [
+      -4.733404849312558,
+      -3.1918334513108944,
+      -0.1359025961692537,
+      -0.9607056234353029
+    ]
+  }
+}

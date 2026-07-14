@@ -1,0 +1,45 @@
+random_seed: 42
+
+data:
+  manifest: config/dataset_manifest.csv
+  processed_dir: data/processed
+
+preprocessing:
+  normalization: reported_final_outputs
+  interpolation: null
+  remove_outliers: false
+
+model:
+  mode: load_existing_or_rebuild_if_missing
+  manifest: config/model_manifest.csv
+  source_required_when_model_missing: true
+  inference_backend: tensorflow_keras
+
+evaluation:
+  metrics:
+    - mae
+    - rmse
+    - mape
+    - component_mae
+    - trend_match
+
+output:
+  results_dir: results
+  save_figures: true
+  save_tables: true
+  save_metrics: true
+  overwrite: true
+
+artifacts:
+  cocktail_summary:
+    source_id: cocktail_gid_summary
+    table_name: Cocktail_GID_summary_with_std.csv
+    figure_name: Figure_cocktail_gid_prediction_barplot.png
+  blood_physiology:
+    source_id: blood_physiology_apap_optimized
+    table_name: Blood_physiology_summary_by_group.xlsx
+    figure_name: Figure_blood_physiology_APAP_optimized.png
+  blood_drug:
+    source_id: blood_drug_spiking_single_model
+    table_name: Blood_drug_spiking_summary_by_group.xlsx
+    figure_name: Figure_blood_drug_spiking_true_pred.png
