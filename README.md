@@ -129,18 +129,20 @@ The planned first formal GitHub Release is:
 v1.0.0 – Initial public release
 ```
 
-This version is intended to identify the source code, data-processing workflow, trained models, example data, supplementary videos, and online interface associated with the manuscript-related release package. The software release author is Xiaohe Shang. After creating the GitHub Release, archive it with Zenodo and use the Zenodo DOI for manuscript citation.
+This version identifies the source code, data-processing workflow, trained models, example data, supplementary videos, and online interface associated with the manuscript-related release package. The software release author is Xiaohe Shang. The archived Zenodo DOI for this version is:
+
+https://doi.org/10.5281/zenodo.21470719
 
 ## Citation
 
 If you use this repository, cite the archived release and the associated manuscript.
 
-Before publication, cite the software release using the metadata in `CITATION.cff`. The software, GitHub repository, Hugging Face site, code, trained models, data-processing workflow, and demonstrations should be cited under `Shang, X.`. After Zenodo archival, update the citation with the Zenodo DOI. After manuscript publication, also cite the final paper separately.
+Before publication, cite the software release using the metadata in `CITATION.cff`. The software, GitHub repository, Hugging Face site, code, trained models, data-processing workflow, and demonstrations should be cited under `Shang, X.`. After manuscript publication, also cite the final paper separately.
 
-Suggested pre-DOI citation:
+Suggested citation:
 
 ```text
-Shang, X. AI-driven Cocktail Model for Analysis of Complex Mixture. Version v1.0.0. GitHub repository. https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture
+Shang, X. (2026). AI-driven Cocktail Model for Analysis of Complex Mixture (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21470719
 ```
 
 ## License

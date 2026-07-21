@@ -3,6 +3,7 @@ message: "If you use this repository, please cite the archived release and the a
 title: "AI-driven Cocktail Model for Analysis of Complex Mixture"
 version: "v1.0.0"
 date-released: 2026-07-21
+doi: 10.5281/zenodo.21470719
 type: software
 repository-code: "https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture"
 url: "https://huggingface.co/spaces/SXHIR/liquid-analyzer"
@@ -23,6 +24,7 @@ preferred-citation:
   title: "AI-driven Cocktail Model for Analysis of Complex Mixture"
   version: "v1.0.0"
   date-released: 2026-07-21
+  doi: 10.5281/zenodo.21470719
   repository-code: "https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture"
   url: "https://huggingface.co/spaces/SXHIR/liquid-analyzer"
   authors:
