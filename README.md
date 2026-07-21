@@ -1,125 +1,148 @@
 # AI-driven Cocktail Model for Analysis of Complex Mixture
 
-This repository provides the code, processed data, packaged model artifacts, reproduction outputs, and supplementary demonstration videos for an AI-driven analytical framework for complex liquid mixtures.
+This repository contains the source code, trained model artifacts, example data, processed outputs, and supplementary videos for an AI-driven workflow for analysis of complex liquid mixtures.
 
-The package supports reproduction of the reported figures, tables, and quantitative metrics for cocktail-mixture and blood-mixture analysis. An online demonstration interface is also available at:
+The release package is intended to support manuscript review, public reuse, and archival through GitHub Releases and Zenodo. The online demonstration interface is available at:
 
 https://huggingface.co/spaces/SXHIR/liquid-analyzer
 
-## Contents
-
-1. [Introduction](#introduction)
-2. [Repository structure](#repository-structure)
-3. [Code package](#code-package)
-4. [Data and model artifacts](#data-and-model-artifacts)
-5. [Supplementary videos](#supplementary-videos)
-6. [Online demonstration](#online-demonstration)
-7. [Reproduction](#reproduction)
-8. [Data availability](#data-availability)
-9. [Citation](#citation)
-
-## Introduction
-
-Complex liquid-mixture analysis requires quantitative interpretation of overlapping spectral or sensor-derived signatures. This repository accompanies an AI-driven workflow designed to identify and quantify components in representative cocktail and blood-mixture settings. The included reproduction package contains standardized inputs, trained model artifacts, processed outputs, and scripts for generating the main reported figures and tables.
-
-The organization of this repository follows a paper-supporting layout: the code package is separated from supplementary videos, processed artifacts are kept with the reproduction workflow, and the online demonstration is linked as an external interface.
-
-## Repository structure
+## Repository Contents
 
 ```text
-AI-driven Cocktail Model for Analysis of Complex Mixture/
+AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture/
 ├── code/
-│   ├── config/
-│   ├── data/
-│   ├── models/
-│   ├── results/
-│   ├── src/
-│   ├── reproduce.py
-│   ├── requirements.txt
-│   └── requirements-optional.txt
-├── videos/
-│   ├── Supplementary_Movie_S1_cocktail_demo.mp4
-│   ├── Supplementary_Movie_S2_blood_demo.mp4
-│   └── Supplementary_Movie_S3_online_website_demo.mp4
+│   ├── config/                    # Dataset/model manifests and runtime configuration
+│   ├── data/                      # Packaged source and processed example data
+│   ├── models/                    # Trained model artifacts and model metadata
+│   ├── results/                   # Reproduced figures, tables, metrics, and logs
+│   ├── src/                       # Reproduction pipeline source code
+│   ├── reproduce.py               # Main reproduction entry point
+│   ├── requirements.txt           # Required Python dependencies
+│   └── requirements-optional.txt  # Optional extended dependencies
 ├── docs/
-│   ├── data_availability.md
-│   └── citation.md
+│   ├── citation.md                # Human-readable citation notes
+│   └── data_availability.md       # Data and artifact availability notes
+├── videos/
+│   ├── cocktail-model_detection_experiment.mp4
+│   ├── cocktail-model_application.mp4
+│   └── online_liquid-analysis_interface_workflow.mp4
+├── CITATION.cff                   # Citation metadata for GitHub and Zenodo
+├── LICENSE                        # Open-source license
 └── README.md
 ```
 
-## Code package
+## Project Overview
 
-The `code/` directory contains the complete reproduction package. It includes the configuration files, processed inputs, model registry, packaged model artifacts, generated figures and tables, and the one-command reproduction entry point.
+The workflow provides a reproducible package for representative complex-mixture analysis tasks. It includes:
 
-Main entry point:
+- Cocktail-mixture detection and component analysis.
+- Cocktail-model application examples for liquid-analysis workflows.
+- Blood-mixture related example outputs used in the manuscript-supporting package.
+- Packaged trained models and manifests needed to verify the released artifacts.
+- Reproducible figures, tables, metrics, and run logs.
 
-```text
-code/reproduce.py
+The repository is organized as a release-ready research artifact. It is not only a code snapshot: it also includes the model files, example data, processed outputs, and demonstration videos needed to document the version used for manuscript submission.
+
+## Installation
+
+Use Python 3.10 or newer. From the repository root:
+
+```bash
+cd code
+python -m pip install -r requirements.txt
 ```
 
-Main configuration:
+Optional dependencies are listed separately:
 
-```text
-code/config/default.yaml
+```bash
+python -m pip install -r requirements-optional.txt
 ```
 
-## Data and model artifacts
+On Windows, the package can be run from PowerShell. If using the project author's local Conda environment, the tested Python path is:
 
-The packaged artifacts are organized inside `code/data/` and `code/models/`. They are included to support direct reproduction of the reported outputs without requiring access to external raw acquisition files.
+```powershell
+D:\conda_envs\chatenv\python.exe
+```
 
-Generated outputs are stored in:
+## Reproduction
+
+Run the reproduction workflow from the `code/` directory:
+
+```bash
+python reproduce.py
+```
+
+Or provide the configuration file explicitly:
+
+```bash
+python reproduce.py --config config/default.yaml
+```
+
+The workflow checks packaged files, loads the dataset and model manifests, verifies trained model artifacts, regenerates figures and tables, and writes outputs to:
 
 ```text
 code/results/
 ```
 
-The results directory includes reproduced figures, tables, metrics, and run logs.
+The main generated outputs include:
 
-## Supplementary videos
+- `code/results/figures/`
+- `code/results/tables/`
+- `code/results/metrics.json`
+- `code/results/run_log.txt`
+- `code/results/run_summary.txt`
 
-The supplementary videos are provided in `videos/`:
+## Data and Models
 
-| File | Description |
+The release includes example data and processed outputs under `code/data/`. The trained model artifacts are included under `code/models/`.
+
+The main registries are:
+
+- `code/config/dataset_manifest.csv`
+- `code/config/model_manifest.csv`
+
+These manifests define the packaged data artifacts, trained model files, metadata files, and generated outputs used by the reproduction workflow.
+
+## Demonstration Videos
+
+The three supplementary videos are stored in `videos/` and are named by their purpose:
+
+| File | Purpose |
 |---|---|
-| `Supplementary_Movie_S1_cocktail_demo.mp4` | Cocktail-mixture demonstration video |
-| `Supplementary_Movie_S2_blood_demo.mp4` | Blood-mixture demonstration video |
-| `Supplementary_Movie_S3_online_website_demo.mp4` | Online website demonstration video |
+| `videos/cocktail-model_detection_experiment.mp4` | Cocktail-model detection experiment. |
+| `videos/cocktail-model_application.mp4` | Cocktail-model application workflow. |
+| `videos/online_liquid-analysis_interface_workflow.mp4` | Online liquid-analysis interface workflow using the Hugging Face Space. |
 
-## Online demonstration
+## Online Demonstration
 
-The web demonstration is hosted on Hugging Face Spaces:
-
-https://huggingface.co/spaces/SXHIR/liquid-analyzer
-
-This interface provides an online demonstration of the liquid-mixture analyzer corresponding to the workflow released in this repository.
-
-## Reproduction
-
-From the repository root, install the required dependencies and run:
-
-```bash
-cd code
-pip install -r requirements.txt
-python reproduce.py
-```
-
-Optional extended dependencies are listed in:
-
-```bash
-pip install -r requirements-optional.txt
-```
-
-The reproduction command checks packaged files, loads the standardized manifests, verifies model artifacts, regenerates figures and tables, and writes the results to `code/results/`.
-
-## Data availability
-
-The data supporting the findings of this study are available in the paper and in this repository. The reproduction package includes processed data, trained model artifacts, generated outputs, and supplementary demonstration videos required to reproduce the released results.
-
-The online demonstration is available at:
+An online demonstration of the liquid-analysis interface is hosted on Hugging Face Spaces:
 
 https://huggingface.co/spaces/SXHIR/liquid-analyzer
+
+The online interface demonstrates the liquid-analysis workflow corresponding to this public release.
+
+## Manuscript Version Information
+
+The planned first formal GitHub Release is:
+
+```text
+v1.0.0 – Initial public release
+```
+
+This version is intended to identify the source code, data-processing workflow, trained models, example data, supplementary videos, and online interface associated with the manuscript-related release package. The software release author is Xiaohe Shang. After creating the GitHub Release, archive it with Zenodo and use the Zenodo DOI for manuscript citation.
 
 ## Citation
 
-If you use this repository, please cite the associated paper. A placeholder citation note is provided in `docs/citation.md` and can be updated after the final bibliographic information is available.
+If you use this repository, cite the archived release and the associated manuscript.
 
+Before publication, cite the software release using the metadata in `CITATION.cff`. The software, GitHub repository, Hugging Face site, code, trained models, data-processing workflow, and demonstrations should be cited under `Shang, X.`. After Zenodo archival, update the citation with the Zenodo DOI. After manuscript publication, also cite the final paper separately.
+
+Suggested pre-DOI citation:
+
+```text
+Shang, X. AI-driven Cocktail Model for Analysis of Complex Mixture. Version v1.0.0. GitHub repository. https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture
+```
+
+## License
+
+This repository is released under the MIT License. See `LICENSE`.

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the archived release and the associated manuscript."
+title: "AI-driven Cocktail Model for Analysis of Complex Mixture"
+version: "v1.0.0"
+date-released: 2026-07-21
+type: software
+repository-code: "https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture"
+url: "https://huggingface.co/spaces/SXHIR/liquid-analyzer"
+license: MIT
+authors:
+  - family-names: Shang
+    given-names: Xiaohe
+    affiliation: National Laboratory of Solid State Microstructures, Jiangsu Physical Science Research Center, School of Physics, Collaborative Innovation Center of Advanced Microstructures, Nanjing University
+abstract: "Source code, trained model artifacts, example data, processed outputs, and demonstration videos for an AI-driven workflow for analysis of complex liquid mixtures."
+keywords:
+  - complex mixture analysis
+  - cocktail model
+  - liquid analysis
+  - machine learning
+  - trained models
+preferred-citation:
+  type: software
+  title: "AI-driven Cocktail Model for Analysis of Complex Mixture"
+  version: "v1.0.0"
+  date-released: 2026-07-21
+  repository-code: "https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture"
+  url: "https://huggingface.co/spaces/SXHIR/liquid-analyzer"
+  authors:
+    - family-names: Shang
+      given-names: Xiaohe
+      affiliation: National Laboratory of Solid State Microstructures, Jiangsu Physical Science Research Center, School of Physics, Collaborative Innovation Center of Advanced Microstructures, Nanjing University

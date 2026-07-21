@@ -1,7 +1,49 @@
+# Python bytecode and caches
 __pycache__/
 *.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .ipynb_checkpoints/
-.DS_Store
-Thumbs.db
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local configuration and secrets
 .env
 .env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Large local-only research artifacts
+raw_data/
+local_data/
+scratch/
+checkpoints/
+wandb/
+mlruns/
