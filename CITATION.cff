@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the archived release and the associated manuscript."
-title: "AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications"
+title: "Cocktail Model: an online platform for database expansion and model application"
 version: "v1.0.0"
 date-released: 2026-07-21
 doi: 10.5281/zenodo.21470719
 type: software
-repository-code: "https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture"
+repository-code: "https://github.com/x3753779-glitch/Cocktail-Model-an-online-platform-for-database-expansion-and-model-application"
 url: "https://huggingface.co/spaces/SXHIR/liquid-analyzer"
 license: MIT
 authors:
@@ -21,11 +21,11 @@ keywords:
   - trained models
 preferred-citation:
   type: software
-  title: "AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications"
+  title: "Cocktail Model: an online platform for database expansion and model application"
   version: "v1.0.0"
   date-released: 2026-07-21
   doi: 10.5281/zenodo.21470719
-  repository-code: "https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture"
+  repository-code: "https://github.com/x3753779-glitch/Cocktail-Model-an-online-platform-for-database-expansion-and-model-application"
   url: "https://huggingface.co/spaces/SXHIR/liquid-analyzer"
   authors:
     - family-names: Shang

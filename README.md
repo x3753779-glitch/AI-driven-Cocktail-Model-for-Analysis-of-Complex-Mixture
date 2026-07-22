@@ -1,4 +1,4 @@
-# AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications
+# Cocktail Model: an online platform for database expansion and model application
 
 This repository contains the source code, trained model artifacts, example data, processed outputs, and supplementary videos for an AI-driven workflow for analysis of complex liquid mixtures.
 
@@ -9,7 +9,7 @@ https://huggingface.co/spaces/SXHIR/liquid-analyzer
 ## Repository Contents
 
 ```text
-AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture/
+Cocktail-Model-an-online-platform-for-database-expansion-and-model-application/
 ├── code/
 │   ├── config/                    # Dataset/model manifests and runtime configuration
 │   ├── data/                      # Packaged source and processed example data
@@ -142,7 +142,7 @@ Before publication, cite the software release using the metadata in `CITATION.cf
 Suggested citation:
 
 ```text
-Shang, X. (2026). AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21470719
+Shang, X. (2026). Cocktail Model: an online platform for database expansion and model application (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21470719
 ```
 
 ## License

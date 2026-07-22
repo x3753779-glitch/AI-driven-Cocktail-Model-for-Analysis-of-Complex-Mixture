@@ -7,7 +7,7 @@ The Hugging Face online site, GitHub repository, source code, trained models, da
 ## Recommended software citation
 
 ```text
-Shang, X. (2026). AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21470719
+Shang, X. (2026). Cocktail Model: an online platform for database expansion and model application (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21470719
 ```
 
 ## Zenodo archival
