@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the archived release and the associated manuscript."
-title: "AI-driven Cocktail Model for Analysis of Complex Mixture"
+title: "AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications"
 version: "v1.0.0"
 date-released: 2026-07-21
 doi: 10.5281/zenodo.21470719
@@ -21,7 +21,7 @@ keywords:
   - trained models
 preferred-citation:
   type: software
-  title: "AI-driven Cocktail Model for Analysis of Complex Mixture"
+  title: "AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications"
   version: "v1.0.0"
   date-released: 2026-07-21
   doi: 10.5281/zenodo.21470719

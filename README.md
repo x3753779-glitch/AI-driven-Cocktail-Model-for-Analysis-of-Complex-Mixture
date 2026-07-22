@@ -1,4 +1,4 @@
-# AI-driven Cocktail Model for Analysis of Complex Mixture
+# AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications
 
 This repository contains the source code, trained model artifacts, example data, processed outputs, and supplementary videos for an AI-driven workflow for analysis of complex liquid mixtures.
 
@@ -142,7 +142,7 @@ Before publication, cite the software release using the metadata in `CITATION.cf
 Suggested citation:
 
 ```text
-Shang, X. (2026). AI-driven Cocktail Model for Analysis of Complex Mixture (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21470719
+Shang, X. (2026). AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21470719
 ```
 
 ## License

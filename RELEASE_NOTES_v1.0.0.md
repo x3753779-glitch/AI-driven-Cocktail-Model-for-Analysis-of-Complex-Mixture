@@ -1,6 +1,6 @@
 # v1.0.0 – Initial public release
 
-This is the initial public release of the AI-driven Cocktail Model for Analysis of Complex Mixture repository.
+This is the initial public release of AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications.
 
 ## Included in this release
 
@@ -29,5 +29,5 @@ Zenodo Creator: Xiaohe Shang.
 Please cite the archived Zenodo release DOI when available. Before Zenodo DOI assignment, cite:
 
 ```text
-Shang, X. AI-driven Cocktail Model for Analysis of Complex Mixture. Version v1.0.0. GitHub repository. https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture
+Shang, X. AI-driven Cocktail Model for Analysis of Complex Mixtures: an online platform for expanding the standard-mixture genome database, updating the model and extending its applications. Version v1.0.0. GitHub repository. https://github.com/x3753779-glitch/AI-driven-Cocktail-Model-for-Analysis-of-Complex-Mixture
 ```
